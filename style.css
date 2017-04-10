@@ -24,6 +24,12 @@ li {
 	float: left;
 }
 
+img {
+	width: 400px;
+	height: 300px;
+}
+
+/*
 .fa {
 	color: #c0c0c0;
 	position: relative;
@@ -42,3 +48,4 @@ li {
     top: 2;
     left: 420;
 }
+*/
