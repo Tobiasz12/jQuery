@@ -5,28 +5,32 @@ body {
     align-items: center;
     margin:auto;
 }
+
 #carousel{
 	width: 400px;
 	height: 300px;
 	overflow: hidden;
 	border-style: solid;
 }
+
 ul {
 	width: 2000px;
 	padding: 0px;
 	margin: 0px;
 }
+
 li {
 	list-style: none;
 	float: left;
 }
+
 .fa {
 	color: #c0c0c0;
 	position: relative;
 	top:120;
 	cursor: pointer;
-
 }
+
 .fa-arrow-right {
 	position: relative;
     top: 2;
