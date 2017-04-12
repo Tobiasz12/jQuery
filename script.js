@@ -1,35 +1,51 @@
 $(function(){
-	var carouselList = $("#carousel ul");
-	
+/*
+	$('div').addClass("carusele");
+	var carouselList = $(".carusele ul");
+
+	function addclasses(){
+	carouselList.addClass('active');
+	};
+
 	setInterval(changeSlide, 2500);
+
 	function changeSlide(){
 
 	carouselList.animate({'marginLeft':-400}, 1000, moveFirstSlide);
-};	
+	};	
 	function moveFirstSlide(){
 	var firstItem = carouselList.find("li:first");
 	var lastItem = carouselList.find("li:last");
 
 	lastItem.after(firstItem)
 	carouselList.css({marginLeft:0});
-};
+	};
+    */   
 
-/*
- $('.right').click(function(){
+ 	$('.right').click(function(){
 
-	carouselList.animate({'marginLeft':+400}, 500);
-});
+ 	$('div').removeClass("carusele");
+	var carouselList = $("#carousel ul");
+	
 
-  $('.left').click(function(){
 
-	carouselList.animate({'marginLeft':-400}, 500,moveLastSlide);
-});
-	function moveLastSlide(){
+	setInterval(changeSlide, 2500);
+	function changeSlide(){
+
+	carouselList.animate({'marginLeft':+400}, 1000, moveFirstSlide);
+	};	
+
+	function moveFirstSlide(){
 	var firstItem = carouselList.find("li:first");
 	var lastItem = carouselList.find("li:last");
+    
+	//firstItem.before(lastItem)
+	firstItem.before(lastItem)
+	carouselList.css({marginLeft:0});
+	};
+	
+});
 
-	firstItem.after(lastItem);
-	carouselList.css({marginRight:0});
-};
-*/
+
+
 });
