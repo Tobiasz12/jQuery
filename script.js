@@ -1,7 +1,6 @@
 $(function(){
-/*
-	$('div').addClass("carusele");
-	var carouselList = $(".carusele ul");
+
+	var carouselList = $("#carousel ul");
 
 	function addclasses(){
 	carouselList.addClass('active');
@@ -20,15 +19,10 @@ $(function(){
 	lastItem.after(firstItem)
 	carouselList.css({marginLeft:0});
 	};
-    */   
+ 
 
  	$('.right').click(function(){
-
- 	$('div').removeClass("carusele");
-	var carouselList = $("#carousel ul");
 	
-
-
 	setInterval(changeSlide, 2500);
 	function changeSlide(){
 
