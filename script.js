@@ -1,5 +1,4 @@
 $(function(){
-
 	var carouselList = $("#carousel ul");
 	var intervalId = setInterval(changeSlide, 1500);  
 
